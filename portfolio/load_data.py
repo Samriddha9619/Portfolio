@@ -11,10 +11,12 @@ if __name__ == "__main__":
     django.setup()
     
     from django.core.management import call_command
-    from home.models import HomePage
+    from wagtail.models import Page
     
-    # Check if HomePage exists
-    if HomePage.objects.count() == 0:
+    # Check if only root page exists (id=1) and welcome page (id=2)
+    page_count = Page.objects.count()
+    
+    if page_count <= 2:
         print("=" * 50)
         print("Loading portfolio data from portfolio_data.json...")
         print("=" * 50)
@@ -22,11 +24,15 @@ if __name__ == "__main__":
             call_command('loaddata', 'portfolio_data.json', verbosity=2)
             print("=" * 50)
             print("Portfolio data loaded successfully!")
+            print(f"Total pages now: {Page.objects.count()}")
             print("=" * 50)
         except Exception as e:
             print("=" * 50)
             print(f"Error loading data: {e}")
             print("=" * 50)
+            import traceback
+            traceback.print_exc()
             sys.exit(1)
     else:
-        print("HomePage already exists, skipping fixture load.")
+        print(f"Pages already exist ({page_count} pages), skipping fixture load.")
+        print("To reload data, delete the database and redeploy.")
