@@ -11,12 +11,22 @@ if __name__ == "__main__":
     django.setup()
     
     from django.core.management import call_command
-    from wagtail.models import Site
+    from home.models import HomePage
     
-    # Check if data already exists
-    if Site.objects.count() == 0:
-        print("Loading portfolio data...")
-        call_command('loaddata', 'portfolio_data.json')
-        print("Portfolio data loaded successfully!")
+    # Check if HomePage exists
+    if HomePage.objects.count() == 0:
+        print("=" * 50)
+        print("Loading portfolio data from portfolio_data.json...")
+        print("=" * 50)
+        try:
+            call_command('loaddata', 'portfolio_data.json', verbosity=2)
+            print("=" * 50)
+            print("Portfolio data loaded successfully!")
+            print("=" * 50)
+        except Exception as e:
+            print("=" * 50)
+            print(f"Error loading data: {e}")
+            print("=" * 50)
+            sys.exit(1)
     else:
-        print("Data already exists, skipping fixture load.")
+        print("HomePage already exists, skipping fixture load.")
