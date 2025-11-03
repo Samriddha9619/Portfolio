@@ -1,0 +1,583 @@
+{% load wagtailcore_tags wagtailimages_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.first_name }} {{ page.last_name }} - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: #2b2b2b;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        nav {
+            background-color: #1f1f1f;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+        
+        nav .container { display: flex; justify-content: space-between; align-items: center; }
+        nav .name { font-size: 1.5rem; font-weight: bold; color: #fff; text-transform: uppercase; letter-spacing: 1px; }
+        nav ul { list-style: none; display: flex; gap: 2rem; }
+        nav a { color: #e0e0e0; text-decoration: none; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: #4A90E2; }
+        
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .profile-photo { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; margin-bottom: 2rem; border: 5px solid #4A90E2; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 1rem; font-weight: 300; letter-spacing: 2px; }
+        .hero .title { font-size: 1.3rem; color: #888; margin-bottom: 2rem; }
+        .hero .icon { font-size: 2rem; margin: 1rem 0; }
+        
+        section { padding: 80px 20px; }
+        section h2 { text-align: center; font-size: 2.5rem; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 2px; }
+        section h2::after { content: ''; display: block; width: 100px; height: 3px; background: #4A90E2; margin: 1rem auto; }
+        .section-icon { text-align: center; font-size: 2rem; margin-bottom: 2rem; }
+        
+        .about-content { max-width: 800px; margin: 0 auto; font-size: 1.1rem; line-height: 1.8; }
+        
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-top: 3rem; }
+        .skill-item { background: #1f1f1f; padding: 1.5rem; border-radius: 8px; text-align: center; transition: transform 0.3s; }
+        .skill-item:hover { transform: translateY(-5px); }
+        .skill-icon { font-size: 2rem; margin-bottom: 0.5rem; }
+        
+        .experience-item { background: #1f1f1f; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; border-left: 4px solid #4A90E2; }
+        .experience-header { display: flex; justify-content: space-between; margin-bottom: 1rem; }
+        .experience-item h3 { font-size: 1.5rem; color: #fff; }
+        .experience-item .company { font-size: 1.1rem; color: #888; }
+        .experience-item .date { color: #888; text-align: right; }
+        .experience-item .location { color: #888; font-style: italic; }
+        .achievement { margin: 0.5rem 0; padding-left: 1.5rem; position: relative; }
+        .achievement::before { content: '⚙'; position: absolute; left: 0; color: #4A90E2; }
+        .tech-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1rem; }
+        .tech-tag { padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: 500; }
+        
+        /* Projects */
+        .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 3rem; }
+        .project-card { background: #1f1f1f; border-radius: 8px; overflow: hidden; transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-10px); }
+        
+        /* Social media cards hover effect */
+        a[href*="linkedin.com"] div:hover,
+        a[href*="github.com"] div:hover,
+        a[href*="twitter.com"] div:hover,
+        a[href*="x.com"] div:hover,
+        a[href^="mailto:"] div:hover {
+            transform: translateY(-10px);
+        }
+        
+        .project-image { width: 100%; height: 200px; object-fit: cover; }
+        .project-content { padding: 1.5rem; }
+        .project-card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; color: #fff; }
+        .project-card .date { color: #888; font-size: 0.9rem; margin-bottom: 1rem; }
+        .project-links { display: flex; gap: 1rem; margin-top: 1rem; }
+        .project-links a { color: #4A90E2; text-decoration: none; }
+        .project-links a:hover { text-decoration: underline; }
+        
+        /* Education */
+        .education-item { background: #1f1f1f; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; }
+        .education-item h3 { font-size: 1.5rem; color: #fff; }
+        .education-item .institution { font-size: 1.1rem; color: #888; margin: 0.5rem 0; }
+        
+        /* Publications */
+        .publication-item { background: #1f1f1f; padding: 2rem; margin-bottom: 2rem; border-radius: 8px; }
+        .publication-item h3 { font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem; }
+        .publication-item .authors { color: #888; margin-bottom: 0.5rem; }
+        .publication-item .journal { color: #4A90E2; font-style: italic; }
+        
+        /* Contact Form */
+        .contact-form { max-width: 600px; margin: 3rem auto; }
+        .form-group { margin-bottom: 1.5rem; }
+        .form-group label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            background: #1f1f1f;
+            border: 1px solid #444;
+            border-radius: 4px;
+            color: #e0e0e0;
+            font-family: inherit;
+        }
+        .form-group textarea { resize: vertical; min-height: 150px; }
+        button[type="submit"] {
+            background: #4A90E2;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button[type="submit"]:hover { background: #357ABD; }
+        
+        footer { text-align: center; padding: 2rem; background: #1f1f1f; margin-top: 4rem; }
+        
+        @media (max-width: 768px) {
+            nav ul { gap: 1rem; font-size: 0.8rem; }
+            .hero h1 { font-size: 2.5rem; }
+            .projects-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Smooth scroll behavior */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+    
+    <script>
+        // Smooth scroll with offset for fixed navbar
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all navigation links
+            const navLinks = document.querySelectorAll('nav a[href^="#"]');
+            
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    if (targetSection) {
+                        const navHeight = document.querySelector('nav').offsetHeight;
+                        const targetPosition = targetSection.offsetTop - navHeight - 20;
+                        
+                        window.scrollTo({
+                            top: targetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="name">{{ page.first_name|upper }} {{ page.last_name|upper }}</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contributions">Contributions</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                {% if page.publications.all %}<li><a href="#publications">Publications</a></li>{% endif %}
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        {% if page.profile_photo %}
+            {% image page.profile_photo fill-250x250 as profile %}
+            <img src="{{ profile.url }}" alt="{{ page.first_name }}" class="profile-photo">
+        {% endif %}
+        <h1>{{ page.first_name }} {{ page.last_name }}</h1>
+        {% if page.professional_title %}<p class="title">{{ page.professional_title }}</p>{% endif %}
+        <div class="icon"></div>
+    </section>
+
+    {% if page.about %}
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="section-icon"></div>
+            <div class="about-content">{{ page.about|richtext }}</div>
+            
+            {% if page.books.all %}
+            <div id="learning-journey" style="margin-top: 4rem; scroll-margin-top: 100px;">
+                <h3 style="text-align: center; font-size: 1.8rem; color: #fff; margin-bottom: 2rem;">
+                     Learning Journey
+                </h3>
+                
+                {% with reading_books=page.books.all %}
+                    {% for book in reading_books %}
+                        {% if book.status == 'reading' %}
+                            {% if forloop.first %}
+                            <h4 style="color: #4A90E2; font-size: 1.2rem; margin: 2rem 0 1rem 0;">📖 Currently Reading</h4>
+                            {% endif %}
+                            <div style="background: #1f1f1f; padding: 1.5rem; margin-bottom: 1rem; border-radius: 8px; border-left: 4px solid #4A90E2;">
+                                <h5 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">{{ book.title }}</h5>
+                                <p style="color: #888; margin-bottom: 0.5rem;">by {{ book.author }}</p>
+                                {% if book.start_date %}<p style="color: #888; font-size: 0.9rem;">Started: {{ book.start_date|date:"F Y" }}</p>{% endif %}
+                                {% if book.key_takeaways %}
+                                    <div style="margin-top: 1rem;">{{ book.key_takeaways|richtext }}</div>
+                                {% endif %}
+                                {% if book.book_url %}
+                                    <a href="{{ book.book_url }}" target="_blank" style="color: #4A90E2; text-decoration: none; font-size: 0.9rem;">View Book →</a>
+                                {% endif %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+                
+                {% with completed_books=page.books.all %}
+                    {% for book in completed_books %}
+                        {% if book.status == 'completed' %}
+                            {% if forloop.first %}
+                            <h4 style="color: #28a745; font-size: 1.2rem; margin: 2rem 0 1rem 0;">✅ Completed</h4>
+                            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+                            {% endif %}
+                            <div style="background: #1f1f1f; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #28a745;">
+                                <h5 style="color: #fff; font-size: 1rem; margin-bottom: 0.5rem;">{{ book.title }}</h5>
+                                <p style="color: #888; font-size: 0.9rem; margin-bottom: 0.5rem;">by {{ book.author }}</p>
+                                {% if book.rating %}
+                                    <div style="color: #f39c12; margin-bottom: 0.5rem;">
+                                        {% for i in "12345" %}{% if forloop.counter <= book.rating %}⭐{% endif %}{% endfor %}
+                                    </div>
+                                {% endif %}
+                                {% if book.finish_date %}<p style="color: #888; font-size: 0.85rem;">Finished: {{ book.finish_date|date:"M Y" }}</p>{% endif %}
+                                {% if book.key_takeaways %}
+                                    <div style="margin-top: 0.5rem; font-size: 0.9rem;">{{ book.key_takeaways|richtext }}</div>
+                                {% endif %}
+                                {% if book.book_url %}
+                                    <a href="{{ book.book_url }}" target="_blank" style="color: #4A90E2; text-decoration: none; font-size: 0.85rem;">View Book →</a>
+                                {% endif %}
+                            </div>
+                            {% if forloop.last %}
+                            </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+                
+                {% with planned_books=page.books.all %}
+                    {% for book in planned_books %}
+                        {% if book.status == 'planned' %}
+                            {% if forloop.first %}
+                            <h4 style="color: #dc3545; font-size: 1.2rem; margin: 2rem 0 1rem 0;">📚 Want to Read</h4>
+                            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+                            {% endif %}
+                            <div style="background: #1f1f1f; padding: 1rem; border-radius: 8px; border-left: 4px solid #dc3545;">
+                                <p style="color: #fff; font-size: 0.95rem; margin-bottom: 0.3rem;">{{ book.title }}</p>
+                                <p style="color: #888; font-size: 0.85rem;">by {{ book.author }}</p>
+                            </div>
+                            {% if forloop.last %}
+                            </div>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endwith %}
+            </div>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.contributions.all %}
+    <section id="contributions">
+        <div class="container">
+            <h2>Open Source Contributions</h2>
+            <div class="section-icon"></div>
+            
+            <div class="projects-grid">
+                {% for contrib in page.contributions.all %}
+                <div class="project-card">
+                    <div class="project-content">
+                        <div style="margin-bottom: 1rem;">
+                            {% if contrib.status == 'merged' %}
+                                <span style="background: #28a745; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: 600;">✓ Merged</span>
+                            {% elif contrib.status == 'open' %}
+                                <span style="background: #f39c12; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: 600;">⏳ Active</span>
+                            {% elif contrib.status == 'closed' %}
+                                <span style="background: #dc3545; color: white; padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.85rem; font-weight: 600;">✕ Closed</span>
+                            {% endif %}
+                        </div>
+                        
+                        <h3 style="color: #4A90E2; font-size: 1.2rem; margin-bottom: 0.5rem;">{{ contrib.project_name }}</h3>
+                        
+                        <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.8rem;">{{ contrib.title }}</h4>
+                        
+                        {% if contrib.date %}
+                        <p class="date" style="margin-bottom: 1rem;">{{ contrib.date|date:"F Y" }}</p>
+                        {% endif %}
+                        
+                        {% if contrib.description %}
+                        <div style="color: #ccc; margin-bottom: 1rem; line-height: 1.6;">
+                            {{ contrib.description|richtext }}
+                        </div>
+                        {% endif %}
+                        
+                        {% if contrib.lines_changed %}
+                        <div style="color: #888; font-size: 0.9rem; margin-bottom: 1rem;">
+                            📊 {{ contrib.lines_changed }}
+                        </div>
+                        {% endif %}
+                        
+                        <div class="project-links">
+                            <a href="{{ contrib.pr_url }}" target="_blank">View Pull Request →</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div style="background: #1f1f1f; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+                <h4 style="color: #fff; margin-bottom: 1rem;">Contribution Summary</h4>
+                <div style="display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap;">
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #4A90E2;">
+                            {{ page.contributions.all.count }}
+                        </div>
+                        <div style="color: #888;">Total PRs</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #28a745;">
+                            {{ page.get_merged_contributions_count }}
+                        </div>
+                        <div style="color: #888;">Merged</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 2rem; font-weight: bold; color: #f39c12;">
+                            {{ page.get_open_contributions_count }}
+                        </div>
+                        <div style="color: #888;">Active</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.experiences.all %}
+    <section id="experience">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="section-icon">⚙</div>
+            {% for exp in page.experiences.all %}
+            <div class="experience-item">
+                <div class="experience-header">
+                    <div>
+                        <h3>{{ exp.job_title }}</h3>
+                        <p class="company">{{ exp.company }}</p>
+                        {% if exp.location %}<p class="location">{{ exp.location }}</p>{% endif %}
+                    </div>
+                    <div class="date">
+                        {{ exp.start_date|date:"F Y" }} - {% if exp.end_date %}{{ exp.end_date|date:"F Y" }}{% else %}Present{% endif %}
+                    </div>
+                </div>
+                {% if exp.description %}{{ exp.description|richtext }}{% endif %}
+                {% if exp.achievement_1 %}<p class="achievement">{{ exp.achievement_1 }}</p>{% endif %}
+                {% if exp.achievement_2 %}<p class="achievement">{{ exp.achievement_2 }}</p>{% endif %}
+                {% if exp.achievement_3 %}<p class="achievement">{{ exp.achievement_3 }}</p>{% endif %}
+                {% if exp.achievement_4 %}<p class="achievement">{{ exp.achievement_4 }}</p>{% endif %}
+                {% if exp.technologies.all %}
+                <div class="tech-tags">
+                    {% for tech in exp.technologies.all %}
+                        <span class="tech-tag" style="--tech-color: {{ tech.technology.color }}; background-color: var(--tech-color, #4A90E2)20; color: var(--tech-color, #4A90E2);">
+                            {{ tech.technology.name }}
+                        </span>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.projects.all %}
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="section-icon"></div>
+            <p style="text-align: center; color: #888; margin-bottom: 2rem;">
+                These are some of my projects that have a visual component, either a CLI or a presentation
+            </p>
+            <div class="projects-grid">
+                {% for project in page.projects.all %}
+                <div class="project-card">
+                    {% if project.image %}
+                        {% image project.image fill-400x200 as proj_img %}
+                        <img src="{{ proj_img.url }}" alt="{{ project.title }}" class="project-image">
+                    {% endif %}
+                    <div class="project-content">
+                        <h3>{{ project.title }}</h3>
+                        {% if project.date %}<p class="date">{{ project.date|date:"F Y" }}</p>{% endif %}
+                        {{ project.description|richtext }}
+                        {% if project.technologies.all %}
+                        <div class="tech-tags">
+                            {% for tech in project.technologies.all %}
+                                <span class="tech-tag" style="--tech-color: {{ tech.technology.color }}; background-color: var(--tech-color, #4A90E2)20; color: var(--tech-color, #4A90E2);">
+                                    {{ tech.technology.name }}
+                                </span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        <div class="project-links">
+                            {% if project.demo_url %}<a href="{{ project.demo_url }}" target="_blank">Demo ↗</a>{% endif %}
+                            {% if project.source_url %}<a href="{{ project.source_url }}" target="_blank">GitHub ↗</a>{% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.skills.all %}
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="section-icon"></div>
+            <div class="skills-grid">
+                {% for skill in page.skills.all %}
+                <div class="skill-item">
+                    {% if skill.icon %}<div class="skill-icon">{{ skill.icon }}</div>{% endif %}
+                    <div>{{ skill.name }}</div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.education_items.all %}
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <div class="section-icon"></div>
+            {% for edu in page.education_items.all %}
+            <div class="education-item">
+                <h3>{{ edu.degree }}{% if edu.field_of_study %} - {{ edu.field_of_study }}{% endif %}</h3>
+                <p class="institution">{{ edu.institution }}</p>
+                {% if edu.location %}<p class="location">{{ edu.location }}</p>{% endif %}
+                <p class="date">
+                    {{ edu.start_date|date:"Y" }} - {% if edu.end_date %}{{ edu.end_date|date:"Y" }}{% else %}Present{% endif %}
+                </p>
+                {% if edu.gpa %}<p>GPA: {{ edu.gpa }}</p>{% endif %}
+                {% if edu.description %}{{ edu.description|richtext }}{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if page.publications.all %}
+    <section id="publications">
+        <div class="container">
+            <h2>Publications</h2>
+            <div class="section-icon">📄</div>
+            {% for pub in page.publications.all %}
+            <div class="publication-item">
+                <h3>{{ pub.title|richtext }}</h3>
+                <p class="authors">{{ pub.authors }}</p>
+                {% if pub.journal %}<p class="journal">{{ pub.journal }}</p>{% endif %}
+                {% if pub.date %}<p class="date">{{ pub.date|date:"F Y" }}</p>{% endif %}
+                {% if pub.doi %}<p>DOI: {{ pub.doi }}</p>{% endif %}
+                {% if pub.url %}<p><a href="{{ pub.url }}" target="_blank">Read more ↗</a></p>{% endif %}
+                {% if pub.abstract %}{{ pub.abstract|richtext }}{% endif %}
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="section-icon"></div>
+            
+            {% if page.linkedin_url or page.github_url or page.twitter_url or page.email %}
+            <div style="max-width: 900px; margin: 0 auto;">
+                <h3 style="text-align: center; color: #fff; font-size: 1.5rem; margin-bottom: 2rem;">Let's Connect</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+                    {% if page.linkedin_url %}
+                    <a href="{{ page.linkedin_url }}" target="_blank" style="text-decoration: none;">
+                        <div style="background: #1f1f1f; padding: 2rem; border-radius: 8px; text-align: center; transition: transform 0.3s; height: 100%;">
+                            <svg style="width: 60px; height: 60px; margin-bottom: 1rem;" viewBox="0 0 24 24" fill="#0A66C2">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">LinkedIn</h4>
+                            <p style="color: #888; font-size: 0.9rem;">Connect professionally</p>
+                        </div>
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.github_url %}
+                    <a href="{{ page.github_url }}" target="_blank" style="text-decoration: none;">
+                        <div style="background: #1f1f1f; padding: 2rem; border-radius: 8px; text-align: center; transition: transform 0.3s; height: 100%;">
+                            <svg style="width: 60px; height: 60px; margin-bottom: 1rem;" viewBox="0 0 24 24" fill="#fff">
+                                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                            </svg>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">GitHub</h4>
+                            <p style="color: #888; font-size: 0.9rem;">View my code</p>
+                        </div>
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.twitter_url %}
+                    <a href="{{ page.twitter_url }}" target="_blank" style="text-decoration: none;">
+                        <div style="background: #1f1f1f; padding: 2rem; border-radius: 8px; text-align: center; transition: transform 0.3s; height: 100%;">
+                            <svg style="width: 60px; height: 60px; margin-bottom: 1rem;" viewBox="0 0 24 24" fill="#fff">
+                                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                            </svg>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">X / Twitter</h4>
+                            <p style="color: #888; font-size: 0.9rem;">Follow my updates</p>
+                        </div>
+                    </a>
+                    {% endif %}
+                    
+                    {% if page.email %}
+                    <a href="mailto:{{ page.email }}" style="text-decoration: none;">
+                        <div style="background: #1f1f1f; padding: 2rem; border-radius: 8px; text-align: center; transition: transform 0.3s; height: 100%;">
+                            <svg style="width: 60px; height: 60px; margin-bottom: 1rem;" viewBox="0 0 24 24" fill="#EA4335">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+                            </svg>
+                            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 0.5rem;">Email</h4>
+                            <p style="color: #888; font-size: 0.9rem; word-break: break-all; overflow-wrap: break-word;">{{ page.email }}</p>
+                        </div>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+            {% endif %}
+            
+            {% if page.form_fields.all %}
+            <h3 style="text-align: center; color: #fff; font-size: 1.3rem; margin: 4rem 0 1.5rem 0;">Or Send Me a Message</h3>
+            <form action="{% pageurl page %}" method="POST" class="contact-form">
+                {% csrf_token %}
+                {% for field in page.form_fields.all %}
+                <div class="form-group">
+                    <label for="{{ field.clean_name }}">{{ field.label }}{% if field.required %} *{% endif %}</label>
+                    {% if field.field_type == 'multiline' %}
+                        <textarea name="{{ field.clean_name }}" id="{{ field.clean_name }}" {% if field.required %}required{% endif %}></textarea>
+                    {% elif field.field_type == 'email' %}
+                        <input type="email" name="{{ field.clean_name }}" id="{{ field.clean_name }}" {% if field.required %}required{% endif %}>
+                    {% else %}
+                        <input type="text" name="{{ field.clean_name }}" id="{{ field.clean_name }}" {% if field.required %}required{% endif %}>
+                    {% endif %}
+                </div>
+                {% endfor %}
+                <button type="submit">Send Message</button>
+            </form>
+            {% endif %}
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 {{ page.first_name }} {{ page.last_name }}. All rights reserved.</p>
+    </footer>
+</body>
+</html>
