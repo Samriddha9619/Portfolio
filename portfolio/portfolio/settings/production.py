@@ -1,11 +1,32 @@
 from .base import *
 import os
 
-DEBUG = False
-
-SECRET_KEY = os.environ.get('SECRET_KEY', 'change-me-in-production')
-
+DEBUG = True  # Temporarily enable for debugging
 ALLOWED_HOSTS = ['*']
+
+# Show detailed errors
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['console'],
+            'level': 'DEBUG',
+            'propagate': False,
+        },
+    },
+}
+
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-temporary-key-change-in-production')
 
 CSRF_TRUSTED_ORIGINS = [
     'https://*.railway.app',
