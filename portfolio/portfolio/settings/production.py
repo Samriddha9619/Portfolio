@@ -1,10 +1,12 @@
 from .base import *
 import os
+import dj_database_url
 
-DEBUG = True  # Temporarily enable for debugging
+DEBUG = False
+
 ALLOWED_HOSTS = ['*']
 
-# Show detailed errors
+# Logging for debugging
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
@@ -17,13 +19,6 @@ LOGGING = {
         'handlers': ['console'],
         'level': 'INFO',
     },
-    'loggers': {
-        'django': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': False,
-        },
-    },
 }
 
 SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-temporary-key-change-in-production')
@@ -32,6 +27,25 @@ CSRF_TRUSTED_ORIGINS = [
     'https://*.railway.app',
     'https://*.up.railway.app',
 ]
+
+# PostgreSQL Database (with SQLite fallback for local testing)
+DATABASE_URL = os.environ.get('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES = {
+        'default': dj_database_url.config(
+            default=DATABASE_URL,
+            conn_max_age=600,
+            conn_health_checks=True,
+        )
+    }
+else:
+    # Fallback to SQLite for local testing when DATABASE_URL is not set
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
 
 # Static files
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')

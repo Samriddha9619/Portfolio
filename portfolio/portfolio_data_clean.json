@@ -1,0 +1,3373 @@
+[
+  {
+    "model": "home.skill",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "name": "Python",
+      "icon": "🐍"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "name": "Django",
+      "icon": "🌐"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 3,
+    "fields": {
+      "sort_order": 3,
+      "page": 3,
+      "name": "FastAPI",
+      "icon": "⚡"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 4,
+    "fields": {
+      "sort_order": 5,
+      "page": 3,
+      "name": "REST APIs",
+      "icon": "🔗"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 5,
+    "fields": {
+      "sort_order": 6,
+      "page": 3,
+      "name": "Git & Github",
+      "icon": "🧬"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 6,
+    "fields": {
+      "sort_order": 7,
+      "page": 3,
+      "name": "PostgreSQL",
+      "icon": "🗄️"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 7,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "name": "GO",
+      "icon": "🐹"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 8,
+    "fields": {
+      "sort_order": 8,
+      "page": 3,
+      "name": "Open Source",
+      "icon": "🌱"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 9,
+    "fields": {
+      "sort_order": 9,
+      "page": 3,
+      "name": "Docker",
+      "icon": "🐳"
+    }
+  },
+  {
+    "model": "home.skill",
+    "pk": 10,
+    "fields": {
+      "sort_order": 4,
+      "page": 3,
+      "name": "DRF",
+      "icon": "📡"
+    }
+  },
+  {
+    "model": "home.project",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "title": "Chat app",
+      "description": "<p data-block-key=\"u178i\">A real-time chat platform built with Django and FastAPI, featuring seamless backend integration and an anonymous messaging mode. Users can connect without revealing identity, enabling spontaneous, privacy-first conversations. FastAPI handles async message delivery, while Django powers user flow and admin controls.</p>",
+      "image": 5,
+      "demo_url": "https://chat-app-ekb0.onrender.com/",
+      "source_url": "https://github.com/Samriddha9619/chat_app",
+      "date": null
+    }
+  },
+  {
+    "model": "home.project",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "title": "Comic Reader",
+      "description": "<p data-block-key=\"u178i\">A simple comic reader that supports .cbz files and uses Cloudinary for image storage and delivery. It extracts and displays comic pages in sequence, making it easy to browse through panels without manual unpacking. Designed for clarity and backend efficiency, with Cloudinary handling optimized media access</p>",
+      "image": 4,
+      "demo_url": "https://manhwa-reader-production.up.railway.app/",
+      "source_url": "https://github.com/Samriddha9619/manhwa-reader",
+      "date": null
+    }
+  },
+  {
+    "model": "home.project",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "title": "Expense tracker",
+      "description": "<p data-block-key=\"u178i\">A personal finance tool built with Django and Django REST Framework (DRF), connected to a React frontend. It allows users to log, categorize, and visualize expenses in real time. DRF powers the secure API layer, while React handles dynamic UI updates and filtering. Designed for simplicity and backend clarity, with a focus on modular architecture and clean data flow.</p>",
+      "image": 3,
+      "demo_url": "https://expensetracker-pr0vx42ks-sumitkumartripathi0-4100s-projects.vercel.app/login",
+      "source_url": "https://github.com/Samriddha9619/expense_tracker",
+      "date": null
+    }
+  },
+  {
+    "model": "home.project",
+    "pk": 4,
+    "fields": {
+      "sort_order": 3,
+      "page": 3,
+      "title": "E-commerce app",
+      "description": "<p data-block-key=\"u178i\">A full-stack e-commerce platform built with Django, featuring product listings, cart management, and secure checkout. Includes user authentication, order tracking, and admin controls for inventory and pricing. Designed with modular views and reusable components to streamline backend logic and scale easily.</p>",
+      "image": 6,
+      "demo_url": "",
+      "source_url": "https://github.com/Samriddha9619/E-commerce",
+      "date": null
+    }
+  },
+  {
+    "model": "home.project",
+    "pk": 5,
+    "fields": {
+      "sort_order": 4,
+      "page": 3,
+      "title": "Youtube video downloader",
+      "description": "<p data-block-key=\"u178i\">A simple and clean web application built with <b>Django</b> and <b>Python</b> to download YouTube videos directly from a URL.<br/>The application uses the <b>pytubefix</b> library to fetch video data and streams the file directly to the user's browser without saving it on the server.</p>",
+      "image": 7,
+      "demo_url": "",
+      "source_url": "https://github.com/Samriddha9619/Youtube_downloader",
+      "date": null
+    }
+  },
+  {
+    "model": "home.education",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "degree": "B. Tech",
+      "field_of_study": "",
+      "institution": "KIET Group of Institutions",
+      "location": "",
+      "start_date": "2024-09-05",
+      "end_date": "2028-05-31",
+      "gpa": "",
+      "description": ""
+    }
+  },
+  {
+    "model": "home.education",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "degree": "Higher Secondary",
+      "field_of_study": "",
+      "institution": "City Montessori School",
+      "location": "",
+      "start_date": "2021-04-05",
+      "end_date": "2023-03-31",
+      "gpa": "",
+      "description": ""
+    }
+  },
+  {
+    "model": "home.book",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "title": "Django for beginner",
+      "author": "William S Vincent",
+      "status": "completed",
+      "start_date": null,
+      "finish_date": null,
+      "rating": 5,
+      "key_takeaways": "",
+      "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+    }
+  },
+  {
+    "model": "home.book",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "title": "Django for APIs",
+      "author": "William S Vincent",
+      "status": "completed",
+      "start_date": null,
+      "finish_date": null,
+      "rating": 4,
+      "key_takeaways": "",
+      "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+    }
+  },
+  {
+    "model": "home.book",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "title": "Designing Data-Intensive Applications",
+      "author": "Martin Kleppmann",
+      "status": "reading",
+      "start_date": null,
+      "finish_date": null,
+      "rating": 5,
+      "key_takeaways": "",
+      "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+    }
+  },
+  {
+    "model": "home.book",
+    "pk": 4,
+    "fields": {
+      "sort_order": 3,
+      "page": 3,
+      "title": "Software Architecture: The Hard Parts",
+      "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+      "status": "planned",
+      "start_date": null,
+      "finish_date": null,
+      "rating": null,
+      "key_takeaways": "",
+      "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Fix query parameter concatenation in RedirectView",
+      "description": "",
+      "pr_url": "https://github.com/django/django/pull/19833",
+      "status": "merged",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 2,
+    "fields": {
+      "sort_order": 1,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Introduced process_lhs() method to Transform for API consistency",
+      "description": "",
+      "pr_url": "https://github.com/Samriddha9619/django/pull/19885",
+      "status": "open",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 3,
+    "fields": {
+      "sort_order": 2,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Clarified migration behavior for ManyToManyField transitions and UniqueConstraint usage",
+      "description": "",
+      "pr_url": "https://github.com/Samriddha9619/django/pull/19886",
+      "status": "merged",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 4,
+    "fields": {
+      "sort_order": 3,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Fixed #33113 — Documented usage and caveats of HTML5 date input in DateInput widget",
+      "description": "",
+      "pr_url": "https://github.com/django/django/pull/19902",
+      "status": "open",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 5,
+    "fields": {
+      "sort_order": 4,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Fixed #35824 — Improved documentation for `patch_cache_control()` in Django’s caching guide",
+      "description": "",
+      "pr_url": "https://github.com/django/django/pull/19922",
+      "status": "open",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "home.contribution",
+    "pk": 6,
+    "fields": {
+      "sort_order": 5,
+      "page": 3,
+      "project_name": "Django",
+      "title": "Clarify warning for UniqueConstraint(nulls_distinct)",
+      "description": "",
+      "pr_url": "https://github.com/Samriddha9619/django/pull/19884",
+      "status": "closed",
+      "date": null,
+      "lines_changed": ""
+    }
+  },
+  {
+    "model": "wagtailforms.formsubmission",
+    "pk": 1,
+    "fields": {
+      "form_data": {},
+      "page": 3,
+      "submit_time": "2025-11-02T21:04:06.483Z"
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 1,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/20251005_224852.max-165x165.jpg",
+      "width": 92,
+      "height": 165,
+      "focal_point_key": "",
+      "image": 1
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 2,
+    "fields": {
+      "filter_spec": "fill-250x250",
+      "file": "images/20251005_224852.2e16d0ba.fill-250x250.jpg",
+      "width": 250,
+      "height": 250,
+      "focal_point_key": "2e16d0ba",
+      "image": 1
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 3,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_011945.max-165x165.png",
+      "width": 165,
+      "height": 92,
+      "focal_point_key": "",
+      "image": 2
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 4,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_013417.max-165x165.png",
+      "width": 165,
+      "height": 84,
+      "focal_point_key": "",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 5,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_013552.max-165x165.png",
+      "width": 165,
+      "height": 83,
+      "focal_point_key": "",
+      "image": 4
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 6,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_013632.max-165x165.png",
+      "width": 165,
+      "height": 84,
+      "focal_point_key": "",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 7,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_020026.max-165x165.png",
+      "width": 165,
+      "height": 84,
+      "focal_point_key": "",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 8,
+    "fields": {
+      "filter_spec": "max-165x165",
+      "file": "images/Screenshot_2025-11-03_022649.max-165x165.png",
+      "width": 165,
+      "height": 114,
+      "focal_point_key": "",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 9,
+    "fields": {
+      "filter_spec": "fill-400x200",
+      "file": "images/Screenshot_2025-11-03_013632.2e16d0ba.fill-400x200.png",
+      "width": 400,
+      "height": 200,
+      "focal_point_key": "2e16d0ba",
+      "image": 5
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 10,
+    "fields": {
+      "filter_spec": "fill-400x200",
+      "file": "images/Screenshot_2025-11-03_013552.2e16d0ba.fill-400x200.png",
+      "width": 400,
+      "height": 200,
+      "focal_point_key": "2e16d0ba",
+      "image": 4
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 11,
+    "fields": {
+      "filter_spec": "fill-400x200",
+      "file": "images/Screenshot_2025-11-03_013417.2e16d0ba.fill-400x200.png",
+      "width": 400,
+      "height": 200,
+      "focal_point_key": "2e16d0ba",
+      "image": 3
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 12,
+    "fields": {
+      "filter_spec": "fill-400x200",
+      "file": "images/Screenshot_2025-11-03_020026.2e16d0ba.fill-400x200.png",
+      "width": 400,
+      "height": 200,
+      "focal_point_key": "2e16d0ba",
+      "image": 6
+    }
+  },
+  {
+    "model": "wagtailimages.rendition",
+    "pk": 13,
+    "fields": {
+      "filter_spec": "fill-400x200",
+      "file": "images/Screenshot_2025-11-03_022649.2e16d0ba.fill-400x200.png",
+      "width": 400,
+      "height": 200,
+      "focal_point_key": "2e16d0ba",
+      "image": 7
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 1,
+    "fields": {
+      "autocomplete": "Home",
+      "title": "Home",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 2,
+    "fields": {
+      "autocomplete": "20251005_224852",
+      "title": "20251005_224852",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 3,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 011945",
+      "title": "Screenshot 2025-11-03 011945",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 4,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 013417",
+      "title": "Screenshot 2025-11-03 013417",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 5,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 013552",
+      "title": "Screenshot 2025-11-03 013552",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 6,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 013632",
+      "title": "Screenshot 2025-11-03 013632",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 7,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 020026",
+      "title": "Screenshot 2025-11-03 020026",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.sqliteftsindexentry",
+    "pk": 8,
+    "fields": {
+      "autocomplete": "Screenshot 2025-11-03 022649",
+      "title": "Screenshot 2025-11-03 022649",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 1,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "object_id": "3",
+      "title_norm": 2.375,
+      "autocomplete": "Home",
+      "title": "Home",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 2,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "1",
+      "title_norm": 0.6333333333333333,
+      "autocomplete": "20251005_224852",
+      "title": "20251005_224852",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 3,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "2",
+      "title_norm": 0.5595238095238095,
+      "autocomplete": "Screenshot 2025-11-03 011945",
+      "title": "Screenshot 2025-11-03 011945",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 4,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "3",
+      "title_norm": 0.6696428571428571,
+      "autocomplete": "Screenshot 2025-11-03 013417",
+      "title": "Screenshot 2025-11-03 013417",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 5,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "4",
+      "title_norm": 0.7357142857142858,
+      "autocomplete": "Screenshot 2025-11-03 013552",
+      "title": "Screenshot 2025-11-03 013552",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 6,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "5",
+      "title_norm": 0.7797619047619048,
+      "autocomplete": "Screenshot 2025-11-03 013632",
+      "title": "Screenshot 2025-11-03 013632",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 7,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "6",
+      "title_norm": 0.8112244897959184,
+      "autocomplete": "Screenshot 2025-11-03 020026",
+      "title": "Screenshot 2025-11-03 020026",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailsearch.indexentry",
+    "pk": 8,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "7",
+      "title_norm": 0.8348214285714286,
+      "autocomplete": "Screenshot 2025-11-03 022649",
+      "title": "Screenshot 2025-11-03 022649",
+      "body": ""
+    }
+  },
+  {
+    "model": "wagtailcore.locale",
+    "pk": 1,
+    "fields": {
+      "language_code": "en"
+    }
+  },
+  {
+    "model": "wagtailcore.site",
+    "fields": {
+      "hostname": "localhost",
+      "port": 80,
+      "site_name": "",
+      "root_page": 3,
+      "is_default_site": true
+    }
+  },
+  {
+    "model": "wagtailcore.collection",
+    "pk": 1,
+    "fields": {
+      "path": "0001",
+      "depth": 1,
+      "numchild": 0,
+      "name": "Root"
+    }
+  },
+  {
+    "model": "wagtailcore.workflow",
+    "pk": 1,
+    "fields": {
+      "name": "Moderators approval",
+      "active": true
+    }
+  },
+  {
+    "model": "wagtailcore.workflowtask",
+    "pk": 1,
+    "fields": {
+      "sort_order": 0,
+      "workflow": 1,
+      "task": 1
+    }
+  },
+  {
+    "model": "wagtailcore.task",
+    "pk": 1,
+    "fields": {
+      "name": "Moderators approval",
+      "content_type": [
+        "wagtailcore",
+        "groupapprovaltask"
+      ],
+      "active": true
+    }
+  },
+  {
+    "model": "wagtailcore.workflowpage",
+    "pk": 1,
+    "fields": {
+      "workflow": 1
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 1,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "1",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 2,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "1",
+      "model_path": "profile_photo",
+      "content_path": "profile_photo",
+      "content_path_hash": "da111136-5293-5b48-b15b-eafcee372543"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 3,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "2",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 4,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 5,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "4",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 6,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "5",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 7,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "6",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 8,
+    "fields": {
+      "content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "base_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "object_id": "7",
+      "to_content_type": [
+        "wagtailcore",
+        "collection"
+      ],
+      "to_object_id": "1",
+      "model_path": "collection",
+      "content_path": "collection",
+      "content_path_hash": "b40b1263-e929-57f2-a7f8-9dbce56b887b"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 9,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "5",
+      "model_path": "projects.item.image",
+      "content_path": "projects.1.image",
+      "content_path_hash": "9c587616-a34a-5031-b380-869914d6ad79"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 10,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "7",
+      "model_path": "projects.item.image",
+      "content_path": "projects.5.image",
+      "content_path_hash": "814a6854-8ebc-544e-b6b7-bcd9a2df7bd4"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 11,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "3",
+      "model_path": "projects.item.image",
+      "content_path": "projects.3.image",
+      "content_path_hash": "2097c317-bdfb-56b2-9e64-348221d7c3b2"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 12,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "6",
+      "model_path": "projects.item.image",
+      "content_path": "projects.4.image",
+      "content_path_hash": "b8ce5587-cf5c-5c3f-8b5d-3b6f6cf37baa"
+    }
+  },
+  {
+    "model": "wagtailcore.referenceindex",
+    "pk": 13,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "to_content_type": [
+        "wagtailimages",
+        "image"
+      ],
+      "to_object_id": "4",
+      "model_path": "projects.item.image",
+      "content_path": "projects.2.image",
+      "content_path_hash": "704b5658-b8f8-5310-a262-0ced52cf2a99"
+    }
+  },
+  {
+    "model": "auth.group",
+    "fields": {
+      "name": "Moderators",
+      "permissions": [
+        [
+          "access_admin",
+          "wagtailadmin",
+          "admin"
+        ],
+        [
+          "add_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "change_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "choose_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "delete_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "add_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "change_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "choose_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "delete_image",
+          "wagtailimages",
+          "image"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "fields": {
+      "name": "Editors",
+      "permissions": [
+        [
+          "access_admin",
+          "wagtailadmin",
+          "admin"
+        ],
+        [
+          "add_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "change_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "choose_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "delete_document",
+          "wagtaildocs",
+          "document"
+        ],
+        [
+          "add_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "change_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "choose_image",
+          "wagtailimages",
+          "image"
+        ],
+        [
+          "delete_image",
+          "wagtailimages",
+          "image"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$te0nzhMWGEyW4M9HfPkie7$pr+doFn8ODP6+RWEgHDRlHTo62m8x+tHzcwfLM0L8FY=",
+      "last_login": "2025-11-02T20:31:05.832Z",
+      "is_superuser": true,
+      "username": "sam",
+      "first_name": "",
+      "last_name": "",
+      "email": "sumit9619official@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-10-28T05:19:08.428Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "fields": {
+      "password": "pbkdf2_sha256$1000000$Hpeltzzw6rJJ9GBVhYkzWG$BIshzf6T+fcMAhbMAw5QSyhSYpXJc5UMBj3xqax14nQ=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "samriddha",
+      "first_name": "",
+      "last_name": "",
+      "email": "sumit9619official@gmail.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2025-11-03T19:21:31.853Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "4d922vruvtnsydjzfmvrqn5dzjvp4uda",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vFdsf:GeDwDyshxOLg8yq_fP43Y64U_hi3Ijjgayob5XcH-iU",
+      "expire_date": "2025-11-16T19:36:49.721Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "8orlvfll0h9bka6q9oprpx42dw24912r",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vF6Gl:TzMpkrDrnACPO9fzMW1M1JNG4RDEzzlghL2GumBXSLE",
+      "expire_date": "2025-11-15T07:43:27.943Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "of8llcq9k7jcefydmxo81m9yt5dvcno0",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vFe6W:puRyXBv4CWzzh76abbUc_hO5wA_eA_fu4WFogm1A22Q",
+      "expire_date": "2025-11-16T19:51:08.662Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "p1vbzp6kjfpewzmgsk2s2kuclririivq",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vFejB:owyhqWkFItgWW3c4p3CuDcBTD8TMj7HSH8UZ-QnUbWs",
+      "expire_date": "2025-11-16T20:31:05.845Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "pqnywa0bi1m2aj9dxdzvsgzf8j98agzz",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vDc7r:nOIr5jH0rZjJs4ehNvjFJ_2xDpHEvVie_7a615qj81o",
+      "expire_date": "2025-11-11T05:20:07.864Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "q6swgt7h9kotvp5h6nl6h3s9psxfib9r",
+    "fields": {
+      "session_data": ".eJxVjMsOwiAQRf-FtSHQ8uzSvd9AZsrUogZMaRON8d-VpAvd3nPuebEA2zqHrdISUmQDk-zwuyGMV8oNxAvkc-FjyeuSkDeF77TyU4l0O-7uX2CGOn_fSsrOSNmD8873DjqN4IGs1eiEVt4ZhNhbO1lUNIIBI7zRUjtl0Co1tWilWlPJgR73tDzZIN4fRDI-Bg:1vFBuc:Kj9drcZExUCnY3GxbfFCl3NWCqijXhD71MhsVUziP9U",
+      "expire_date": "2025-11-15T13:44:58.393Z"
+    }
+  },
+  {
+    "model": "wagtailcore.pagesubscription",
+    "pk": 1,
+    "fields": {
+      "user": [
+        "sam"
+      ],
+      "page": 3,
+      "comment_notifications": false
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 1,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2025-11-01T08:32:45.343Z",
+      "uuid": "01338241-5a6d-4c97-9607-4b36d99569e8",
+      "user": [
+        "sam"
+      ],
+      "revision": 1,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 2,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2025-11-01T08:33:05.568Z",
+      "uuid": "8e240c63-c823-425e-aead-7587a2bfa75f",
+      "user": [
+        "sam"
+      ],
+      "revision": 2,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 3,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.publish",
+      "data": {},
+      "timestamp": "2025-11-01T08:33:05.745Z",
+      "uuid": "8e240c63-c823-425e-aead-7587a2bfa75f",
+      "user": [
+        "sam"
+      ],
+      "revision": 2,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 4,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2025-11-01T13:35:12.524Z",
+      "uuid": "c129740b-1149-4ccb-a0cd-6ea73426b2f8",
+      "user": [
+        "sam"
+      ],
+      "revision": 3,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 5,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.publish",
+      "data": {},
+      "timestamp": "2025-11-01T13:35:12.819Z",
+      "uuid": "c129740b-1149-4ccb-a0cd-6ea73426b2f8",
+      "user": [
+        "sam"
+      ],
+      "revision": 3,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 6,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2025-11-02T21:01:32.818Z",
+      "uuid": "5c0e6aa3-2a80-43fd-9925-17238bc2c9b1",
+      "user": [
+        "sam"
+      ],
+      "revision": 4,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 7,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.publish",
+      "data": {},
+      "timestamp": "2025-11-02T21:01:33.303Z",
+      "uuid": "5c0e6aa3-2a80-43fd-9925-17238bc2c9b1",
+      "user": [
+        "sam"
+      ],
+      "revision": 4,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 8,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.edit",
+      "data": {},
+      "timestamp": "2025-11-03T18:04:54.461Z",
+      "uuid": "1dd8fa85-926b-456f-9ea1-3a3d34a07434",
+      "user": [
+        "sam"
+      ],
+      "revision": 5,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.pagelogentry",
+    "pk": 9,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "label": "Home",
+      "action": "wagtail.publish",
+      "data": {},
+      "timestamp": "2025-11-03T18:04:54.789Z",
+      "uuid": "1dd8fa85-926b-456f-9ea1-3a3d34a07434",
+      "user": [
+        "sam"
+      ],
+      "revision": 5,
+      "content_changed": true,
+      "deleted": false,
+      "page": 3
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 1,
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "page": 1,
+      "permission": [
+        "add_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 2,
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "page": 1,
+      "permission": [
+        "change_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 3,
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "page": 1,
+      "permission": [
+        "publish_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 4,
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "page": 1,
+      "permission": [
+        "add_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 5,
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "page": 1,
+      "permission": [
+        "change_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 6,
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "page": 1,
+      "permission": [
+        "lock_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.grouppagepermission",
+    "pk": 7,
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "page": 1,
+      "permission": [
+        "unlock_page",
+        "wagtailcore",
+        "page"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.page",
+    "pk": 1,
+    "fields": {
+      "path": "0001",
+      "depth": 1,
+      "numchild": 1,
+      "translation_key": "83ab6b8d-479a-4eb8-b49d-21880d4d1c89",
+      "locale": 1,
+      "latest_revision": null,
+      "live": true,
+      "has_unpublished_changes": false,
+      "first_published_at": null,
+      "last_published_at": null,
+      "live_revision": null,
+      "go_live_at": null,
+      "expire_at": null,
+      "expired": false,
+      "locked": false,
+      "locked_at": null,
+      "locked_by": null,
+      "title": "Root",
+      "draft_title": "Root",
+      "slug": "root",
+      "content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "url_path": "/",
+      "owner": null,
+      "seo_title": "",
+      "show_in_menus": false,
+      "search_description": "",
+      "latest_revision_created_at": null,
+      "alias_of": null
+    }
+  },
+  {
+    "model": "wagtailcore.page",
+    "pk": 3,
+    "fields": {
+      "path": "00010001",
+      "depth": 2,
+      "numchild": 0,
+      "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+      "locale": 1,
+      "latest_revision": 5,
+      "live": true,
+      "has_unpublished_changes": false,
+      "first_published_at": "2025-11-01T08:33:05.615Z",
+      "last_published_at": "2025-11-03T18:04:54.519Z",
+      "live_revision": 5,
+      "go_live_at": null,
+      "expire_at": null,
+      "expired": false,
+      "locked": false,
+      "locked_at": null,
+      "locked_by": null,
+      "title": "Home",
+      "draft_title": "Home",
+      "slug": "home",
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "url_path": "/home/",
+      "owner": null,
+      "seo_title": "",
+      "show_in_menus": false,
+      "search_description": "",
+      "latest_revision_created_at": "2025-11-03T18:04:54.407Z",
+      "alias_of": null
+    }
+  },
+  {
+    "model": "wagtailcore.groupapprovaltask",
+    "pk": 1,
+    "fields": {
+      "task_ptr": 1,
+      "groups": [
+        [
+          "Moderators"
+        ]
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "add_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "change_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "choose_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "choose_image",
+        "wagtailimages",
+        "image"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "add_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "change_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Editors"
+      ],
+      "collection": 1,
+      "permission": [
+        "choose_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.groupcollectionpermission",
+    "fields": {
+      "group": [
+        "Moderators"
+      ],
+      "collection": 1,
+      "permission": [
+        "choose_document",
+        "wagtaildocs",
+        "document"
+      ]
+    }
+  },
+  {
+    "model": "wagtailcore.revision",
+    "pk": 1,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "created_at": "2025-11-01T08:32:44.526Z",
+      "user": [
+        "sam"
+      ],
+      "object_str": "Home",
+      "content": {
+        "pk": 3,
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 0,
+        "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+        "locale": 1,
+        "latest_revision": null,
+        "live": true,
+        "has_unpublished_changes": false,
+        "first_published_at": null,
+        "last_published_at": null,
+        "live_revision": null,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Home",
+        "draft_title": "Home",
+        "slug": "home",
+        "content_type": 4,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": null,
+        "alias_of": null,
+        "to_address": "",
+        "from_address": "",
+        "subject": "",
+        "first_name": "Samriddha",
+        "last_name": "Tripathi",
+        "professional_title": "",
+        "profile_photo": null,
+        "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+        "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+        "wagtail_admin_comments": [],
+        "skills": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "name": "Python",
+            "icon": "🐍"
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "name": "Django",
+            "icon": "🌐"
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "name": "FastAPI",
+            "icon": "⚡"
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "name": "REST APIs",
+            "icon": "🔗"
+          },
+          {
+            "pk": null,
+            "sort_order": 4,
+            "page": 3,
+            "name": "Git & Github",
+            "icon": "🧬"
+          },
+          {
+            "pk": null,
+            "sort_order": 5,
+            "page": 3,
+            "name": "PostgreSQL",
+            "icon": "🗄️"
+          },
+          {
+            "pk": null,
+            "sort_order": 6,
+            "page": 3,
+            "name": "GO",
+            "icon": "🐹"
+          },
+          {
+            "pk": null,
+            "sort_order": 7,
+            "page": 3,
+            "name": "Open Source",
+            "icon": "🌱"
+          },
+          {
+            "pk": null,
+            "sort_order": 8,
+            "page": 3,
+            "name": "Distributed Systems",
+            "icon": "🌍"
+          }
+        ],
+        "experiences": [],
+        "projects": [],
+        "education_items": [],
+        "books": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Django for beginner",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Django for APIs",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 4,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "status": "reading",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "title": "Software Architecture: The Hard Parts",
+            "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+            "status": "planned",
+            "start_date": null,
+            "finish_date": null,
+            "rating": null,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+          }
+        ],
+        "contributions": [],
+        "publications": [],
+        "form_fields": []
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.revision",
+    "pk": 2,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "created_at": "2025-11-01T08:33:05.511Z",
+      "user": [
+        "sam"
+      ],
+      "object_str": "Home",
+      "content": {
+        "pk": 3,
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 0,
+        "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+        "locale": 1,
+        "latest_revision": 1,
+        "live": true,
+        "has_unpublished_changes": true,
+        "first_published_at": null,
+        "last_published_at": null,
+        "live_revision": null,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Home",
+        "draft_title": "Home",
+        "slug": "home",
+        "content_type": 4,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": "2025-11-01T08:32:44.526Z",
+        "alias_of": null,
+        "to_address": "",
+        "from_address": "",
+        "subject": "",
+        "first_name": "Samriddha",
+        "last_name": "Tripathi",
+        "professional_title": "",
+        "profile_photo": null,
+        "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+        "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+        "wagtail_admin_comments": [],
+        "skills": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "name": "Python",
+            "icon": "🐍"
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "name": "Django",
+            "icon": "🌐"
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "name": "FastAPI",
+            "icon": "⚡"
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "name": "REST APIs",
+            "icon": "🔗"
+          },
+          {
+            "pk": null,
+            "sort_order": 4,
+            "page": 3,
+            "name": "Git & Github",
+            "icon": "🧬"
+          },
+          {
+            "pk": null,
+            "sort_order": 5,
+            "page": 3,
+            "name": "PostgreSQL",
+            "icon": "🗄️"
+          },
+          {
+            "pk": null,
+            "sort_order": 6,
+            "page": 3,
+            "name": "GO",
+            "icon": "🐹"
+          },
+          {
+            "pk": null,
+            "sort_order": 7,
+            "page": 3,
+            "name": "Open Source",
+            "icon": "🌱"
+          },
+          {
+            "pk": null,
+            "sort_order": 8,
+            "page": 3,
+            "name": "Distributed Systems",
+            "icon": "🌍"
+          }
+        ],
+        "experiences": [],
+        "projects": [],
+        "education_items": [],
+        "books": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Django for beginner",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Django for APIs",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 4,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "status": "reading",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "title": "Software Architecture: The Hard Parts",
+            "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+            "status": "planned",
+            "start_date": null,
+            "finish_date": null,
+            "rating": null,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+          }
+        ],
+        "contributions": [],
+        "publications": [],
+        "form_fields": []
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.revision",
+    "pk": 3,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "created_at": "2025-11-01T13:35:12.433Z",
+      "user": [
+        "sam"
+      ],
+      "object_str": "Home",
+      "content": {
+        "pk": 3,
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 0,
+        "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+        "locale": 1,
+        "latest_revision": 2,
+        "live": true,
+        "has_unpublished_changes": false,
+        "first_published_at": "2025-11-01T08:33:05.615Z",
+        "last_published_at": "2025-11-01T08:33:05.615Z",
+        "live_revision": 2,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Home",
+        "draft_title": "Home",
+        "slug": "home",
+        "content_type": 4,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": "2025-11-01T08:33:05.511Z",
+        "alias_of": null,
+        "to_address": "",
+        "from_address": "",
+        "subject": "",
+        "first_name": "Samriddha",
+        "last_name": "Tripathi",
+        "professional_title": "",
+        "profile_photo": 1,
+        "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+        "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+        "linkedin_url": "",
+        "github_url": "",
+        "twitter_url": "",
+        "email": "",
+        "wagtail_admin_comments": [],
+        "skills": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "name": "Python",
+            "icon": "🐍"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "name": "Django",
+            "icon": "🌐"
+          },
+          {
+            "pk": 7,
+            "sort_order": 2,
+            "page": 3,
+            "name": "GO",
+            "icon": "🐹"
+          },
+          {
+            "pk": 3,
+            "sort_order": 3,
+            "page": 3,
+            "name": "FastAPI",
+            "icon": "⚡"
+          },
+          {
+            "pk": null,
+            "sort_order": 4,
+            "page": 3,
+            "name": "DRF",
+            "icon": "📡"
+          },
+          {
+            "pk": 4,
+            "sort_order": 5,
+            "page": 3,
+            "name": "REST APIs",
+            "icon": "🔗"
+          },
+          {
+            "pk": 5,
+            "sort_order": 6,
+            "page": 3,
+            "name": "Git & Github",
+            "icon": "🧬"
+          },
+          {
+            "pk": 6,
+            "sort_order": 7,
+            "page": 3,
+            "name": "PostgreSQL",
+            "icon": "🗄️"
+          },
+          {
+            "pk": 8,
+            "sort_order": 8,
+            "page": 3,
+            "name": "Open Source",
+            "icon": "🌱"
+          },
+          {
+            "pk": 9,
+            "sort_order": 9,
+            "page": 3,
+            "name": "Docker",
+            "icon": "🐳"
+          }
+        ],
+        "experiences": [],
+        "projects": [],
+        "education_items": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "degree": "B. Tech",
+            "field_of_study": "",
+            "institution": "KIET Group of Institutions",
+            "location": "",
+            "start_date": "2024-09-05",
+            "end_date": "2028-05-31",
+            "gpa": "",
+            "description": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "degree": "Higher Secondary",
+            "field_of_study": "",
+            "institution": "City Montessori School",
+            "location": "",
+            "start_date": "2021-04-05",
+            "end_date": "2023-03-31",
+            "gpa": "",
+            "description": ""
+          }
+        ],
+        "books": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Django for beginner",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Django for APIs",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 4,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "status": "reading",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "title": "Software Architecture: The Hard Parts",
+            "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+            "status": "planned",
+            "start_date": null,
+            "finish_date": null,
+            "rating": null,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+          }
+        ],
+        "contributions": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fix query parameter concatenation in RedirectView",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19833",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Introduced process_lhs() method to Transform for API consistency",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19885",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Clarified migration behavior for ManyToManyField transitions and UniqueConstraint usage",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19886",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #33113 — Documented usage and caveats of HTML5 date input in DateInput widget",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19902",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 4,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #35824 — Improved documentation for `patch_cache_control()` in Django’s caching guide",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19922",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          }
+        ],
+        "publications": [],
+        "form_fields": []
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.revision",
+    "pk": 4,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "created_at": "2025-11-02T21:01:32.725Z",
+      "user": [
+        "sam"
+      ],
+      "object_str": "Home",
+      "content": {
+        "pk": 3,
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 0,
+        "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+        "locale": 1,
+        "latest_revision": 3,
+        "live": true,
+        "has_unpublished_changes": false,
+        "first_published_at": "2025-11-01T08:33:05.615Z",
+        "last_published_at": "2025-11-01T13:35:12.584Z",
+        "live_revision": 3,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Home",
+        "draft_title": "Home",
+        "slug": "home",
+        "content_type": 4,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": "2025-11-01T13:35:12.433Z",
+        "alias_of": null,
+        "to_address": "",
+        "from_address": "",
+        "subject": "",
+        "first_name": "Samriddha",
+        "last_name": "Tripathi",
+        "professional_title": "",
+        "profile_photo": 1,
+        "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+        "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+        "linkedin_url": "https://www.linkedin.com/in/samriddha9619",
+        "github_url": "https://github.com/Samriddha9619",
+        "twitter_url": "https://x.com/Samriddha_9619",
+        "email": "sumitkumartripathi0@gmail.com",
+        "wagtail_admin_comments": [],
+        "skills": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "name": "Python",
+            "icon": "🐍"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "name": "Django",
+            "icon": "🌐"
+          },
+          {
+            "pk": 7,
+            "sort_order": 2,
+            "page": 3,
+            "name": "GO",
+            "icon": "🐹"
+          },
+          {
+            "pk": 3,
+            "sort_order": 3,
+            "page": 3,
+            "name": "FastAPI",
+            "icon": "⚡"
+          },
+          {
+            "pk": 10,
+            "sort_order": 4,
+            "page": 3,
+            "name": "DRF",
+            "icon": "📡"
+          },
+          {
+            "pk": 4,
+            "sort_order": 5,
+            "page": 3,
+            "name": "REST APIs",
+            "icon": "🔗"
+          },
+          {
+            "pk": 5,
+            "sort_order": 6,
+            "page": 3,
+            "name": "Git & Github",
+            "icon": "🧬"
+          },
+          {
+            "pk": 6,
+            "sort_order": 7,
+            "page": 3,
+            "name": "PostgreSQL",
+            "icon": "🗄️"
+          },
+          {
+            "pk": 8,
+            "sort_order": 8,
+            "page": 3,
+            "name": "Open Source",
+            "icon": "🌱"
+          },
+          {
+            "pk": 9,
+            "sort_order": 9,
+            "page": 3,
+            "name": "Docker",
+            "icon": "🐳"
+          }
+        ],
+        "experiences": [],
+        "projects": [
+          {
+            "pk": null,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Chat app",
+            "description": "<p data-block-key=\"u178i\"> A real-time chat platform built with Django and FastAPI, featuring seamless backend integration and an anonymous messaging mode. Users can connect without revealing identity, enabling spontaneous, privacy-first conversations. FastAPI handles async message delivery, while Django powers user flow and admin controls.</p>",
+            "image": 5,
+            "demo_url": "https://chat-app-ekb0.onrender.com/",
+            "source_url": "https://github.com/Samriddha9619/chat_app",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": null,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Comic Reader",
+            "description": "<p data-block-key=\"u178i\"> A simple comic reader that supports .cbz files and uses Cloudinary for image storage and delivery. It extracts and displays comic pages in sequence, making it easy to browse through panels without manual unpacking. Designed for clarity and backend efficiency, with Cloudinary handling optimized media access</p>",
+            "image": 4,
+            "demo_url": "https://manhwa-reader-production.up.railway.app/",
+            "source_url": "https://github.com/Samriddha9619/manhwa-reader",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": null,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Expense tracker",
+            "description": "<p data-block-key=\"u178i\"> A personal finance tool built with Django and Django REST Framework (DRF), connected to a React frontend. It allows users to log, categorize, and visualize expenses in real time. DRF powers the secure API layer, while React handles dynamic UI updates and filtering. Designed for simplicity and backend clarity, with a focus on modular architecture and clean data flow.</p>",
+            "image": 3,
+            "demo_url": "https://expensetracker-pr0vx42ks-sumitkumartripathi0-4100s-projects.vercel.app/login",
+            "source_url": "https://github.com/Samriddha9619/expense_tracker",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": null,
+            "sort_order": 3,
+            "page": 3,
+            "title": "E-commerce app",
+            "description": "<p data-block-key=\"u178i\"> A full-stack e-commerce platform built with Django, featuring product listings, cart management, and secure checkout. Includes user authentication, order tracking, and admin controls for inventory and pricing. Designed with modular views and reusable components to streamline backend logic and scale easily.</p>",
+            "image": 6,
+            "demo_url": "",
+            "source_url": "https://github.com/Samriddha9619/E-commerce",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": null,
+            "sort_order": 4,
+            "page": 3,
+            "title": "Youtube video downloader",
+            "description": "<p data-block-key=\"u178i\"> A simple and clean web application built with <b>Django</b> and <b>Python</b> to download YouTube videos directly from a URL.<br/>The application uses the <b>pytubefix</b> library to fetch video data and streams the file directly to the user's browser without saving it on the server.</p>",
+            "image": 7,
+            "demo_url": "",
+            "source_url": "https://github.com/Samriddha9619/Youtube_downloader",
+            "date": null,
+            "technologies": []
+          }
+        ],
+        "education_items": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "degree": "B. Tech",
+            "field_of_study": "",
+            "institution": "KIET Group of Institutions",
+            "location": "",
+            "start_date": "2024-09-05",
+            "end_date": "2028-05-31",
+            "gpa": "",
+            "description": ""
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "degree": "Higher Secondary",
+            "field_of_study": "",
+            "institution": "City Montessori School",
+            "location": "",
+            "start_date": "2021-04-05",
+            "end_date": "2023-03-31",
+            "gpa": "",
+            "description": ""
+          }
+        ],
+        "books": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Django for beginner",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Django for APIs",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 4,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "status": "reading",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "title": "Software Architecture: The Hard Parts",
+            "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+            "status": "planned",
+            "start_date": null,
+            "finish_date": null,
+            "rating": null,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+          }
+        ],
+        "contributions": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fix query parameter concatenation in RedirectView",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19833",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Introduced process_lhs() method to Transform for API consistency",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19885",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Clarified migration behavior for ManyToManyField transitions and UniqueConstraint usage",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19886",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #33113 — Documented usage and caveats of HTML5 date input in DateInput widget",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19902",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 5,
+            "sort_order": 4,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #35824 — Improved documentation for `patch_cache_control()` in Django’s caching guide",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19922",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          }
+        ],
+        "publications": [],
+        "form_fields": []
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailcore.revision",
+    "pk": 5,
+    "fields": {
+      "content_type": [
+        "home",
+        "homepage"
+      ],
+      "base_content_type": [
+        "wagtailcore",
+        "page"
+      ],
+      "object_id": "3",
+      "created_at": "2025-11-03T18:04:54.407Z",
+      "user": [
+        "sam"
+      ],
+      "object_str": "Home",
+      "content": {
+        "pk": 3,
+        "path": "00010001",
+        "depth": 2,
+        "numchild": 0,
+        "translation_key": "cff8c38e-345d-4706-8c8e-298fc79e6cd2",
+        "locale": 1,
+        "latest_revision": 4,
+        "live": true,
+        "has_unpublished_changes": false,
+        "first_published_at": "2025-11-01T08:33:05.615Z",
+        "last_published_at": "2025-11-02T21:01:32.928Z",
+        "live_revision": 4,
+        "go_live_at": null,
+        "expire_at": null,
+        "expired": false,
+        "locked": false,
+        "locked_at": null,
+        "locked_by": null,
+        "title": "Home",
+        "draft_title": "Home",
+        "slug": "home",
+        "content_type": 4,
+        "url_path": "/home/",
+        "owner": null,
+        "seo_title": "",
+        "show_in_menus": false,
+        "search_description": "",
+        "latest_revision_created_at": "2025-11-02T21:01:32.725Z",
+        "alias_of": null,
+        "to_address": "",
+        "from_address": "",
+        "subject": "",
+        "first_name": "Samriddha",
+        "last_name": "Tripathi",
+        "professional_title": "",
+        "profile_photo": 1,
+        "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+        "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+        "linkedin_url": "https://www.linkedin.com/in/samriddha9619",
+        "github_url": "https://github.com/Samriddha9619",
+        "twitter_url": "https://x.com/Samriddha_9619",
+        "email": "sumitkumartripathi0@gmail.com",
+        "wagtail_admin_comments": [],
+        "skills": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "name": "Python",
+            "icon": "🐍"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "name": "Django",
+            "icon": "🌐"
+          },
+          {
+            "pk": 7,
+            "sort_order": 2,
+            "page": 3,
+            "name": "GO",
+            "icon": "🐹"
+          },
+          {
+            "pk": 3,
+            "sort_order": 3,
+            "page": 3,
+            "name": "FastAPI",
+            "icon": "⚡"
+          },
+          {
+            "pk": 10,
+            "sort_order": 4,
+            "page": 3,
+            "name": "DRF",
+            "icon": "📡"
+          },
+          {
+            "pk": 4,
+            "sort_order": 5,
+            "page": 3,
+            "name": "REST APIs",
+            "icon": "🔗"
+          },
+          {
+            "pk": 5,
+            "sort_order": 6,
+            "page": 3,
+            "name": "Git & Github",
+            "icon": "🧬"
+          },
+          {
+            "pk": 6,
+            "sort_order": 7,
+            "page": 3,
+            "name": "PostgreSQL",
+            "icon": "🗄️"
+          },
+          {
+            "pk": 8,
+            "sort_order": 8,
+            "page": 3,
+            "name": "Open Source",
+            "icon": "🌱"
+          },
+          {
+            "pk": 9,
+            "sort_order": 9,
+            "page": 3,
+            "name": "Docker",
+            "icon": "🐳"
+          }
+        ],
+        "experiences": [],
+        "projects": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Chat app",
+            "description": "<p data-block-key=\"u178i\">A real-time chat platform built with Django and FastAPI, featuring seamless backend integration and an anonymous messaging mode. Users can connect without revealing identity, enabling spontaneous, privacy-first conversations. FastAPI handles async message delivery, while Django powers user flow and admin controls.</p>",
+            "image": 5,
+            "demo_url": "https://chat-app-ekb0.onrender.com/",
+            "source_url": "https://github.com/Samriddha9619/chat_app",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Comic Reader",
+            "description": "<p data-block-key=\"u178i\">A simple comic reader that supports .cbz files and uses Cloudinary for image storage and delivery. It extracts and displays comic pages in sequence, making it easy to browse through panels without manual unpacking. Designed for clarity and backend efficiency, with Cloudinary handling optimized media access</p>",
+            "image": 4,
+            "demo_url": "https://manhwa-reader-production.up.railway.app/",
+            "source_url": "https://github.com/Samriddha9619/manhwa-reader",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Expense tracker",
+            "description": "<p data-block-key=\"u178i\">A personal finance tool built with Django and Django REST Framework (DRF), connected to a React frontend. It allows users to log, categorize, and visualize expenses in real time. DRF powers the secure API layer, while React handles dynamic UI updates and filtering. Designed for simplicity and backend clarity, with a focus on modular architecture and clean data flow.</p>",
+            "image": 3,
+            "demo_url": "https://expensetracker-pr0vx42ks-sumitkumartripathi0-4100s-projects.vercel.app/login",
+            "source_url": "https://github.com/Samriddha9619/expense_tracker",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "title": "E-commerce app",
+            "description": "<p data-block-key=\"u178i\">A full-stack e-commerce platform built with Django, featuring product listings, cart management, and secure checkout. Includes user authentication, order tracking, and admin controls for inventory and pricing. Designed with modular views and reusable components to streamline backend logic and scale easily.</p>",
+            "image": 6,
+            "demo_url": "",
+            "source_url": "https://github.com/Samriddha9619/E-commerce",
+            "date": null,
+            "technologies": []
+          },
+          {
+            "pk": 5,
+            "sort_order": 4,
+            "page": 3,
+            "title": "Youtube video downloader",
+            "description": "<p data-block-key=\"u178i\">A simple and clean web application built with <b>Django</b> and <b>Python</b> to download YouTube videos directly from a URL.<br/>The application uses the <b>pytubefix</b> library to fetch video data and streams the file directly to the user's browser without saving it on the server.</p>",
+            "image": 7,
+            "demo_url": "",
+            "source_url": "https://github.com/Samriddha9619/Youtube_downloader",
+            "date": null,
+            "technologies": []
+          }
+        ],
+        "education_items": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "degree": "B. Tech",
+            "field_of_study": "",
+            "institution": "KIET Group of Institutions",
+            "location": "",
+            "start_date": "2024-09-05",
+            "end_date": "2028-05-31",
+            "gpa": "",
+            "description": ""
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "degree": "Higher Secondary",
+            "field_of_study": "",
+            "institution": "City Montessori School",
+            "location": "",
+            "start_date": "2021-04-05",
+            "end_date": "2023-03-31",
+            "gpa": "",
+            "description": ""
+          }
+        ],
+        "books": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "title": "Django for beginner",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-Beginners-Build-Websites-Python/dp/1735467200"
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "title": "Django for APIs",
+            "author": "William S Vincent",
+            "status": "completed",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 4,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Django-APIs-Build-web-Python/dp/1735467227"
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "title": "Designing Data-Intensive Applications",
+            "author": "Martin Kleppmann",
+            "status": "reading",
+            "start_date": null,
+            "finish_date": null,
+            "rating": 5,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/9352135245"
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "title": "Software Architecture: The Hard Parts",
+            "author": "Neal Ford, Mark Richards, Pramod Sadalage, Zhamak Dehghani",
+            "status": "planned",
+            "start_date": null,
+            "finish_date": null,
+            "rating": null,
+            "key_takeaways": "",
+            "book_url": "https://www.amazon.in/Software-Architecture-Modern-Tradeoff-Analysis/dp/1492086894"
+          }
+        ],
+        "contributions": [
+          {
+            "pk": 1,
+            "sort_order": 0,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fix query parameter concatenation in RedirectView",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19833",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 2,
+            "sort_order": 1,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Introduced process_lhs() method to Transform for API consistency",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19885",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 3,
+            "sort_order": 2,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Clarified migration behavior for ManyToManyField transitions and UniqueConstraint usage",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19886",
+            "status": "merged",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 4,
+            "sort_order": 3,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #33113 — Documented usage and caveats of HTML5 date input in DateInput widget",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19902",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": 5,
+            "sort_order": 4,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Fixed #35824 — Improved documentation for `patch_cache_control()` in Django’s caching guide",
+            "description": "",
+            "pr_url": "https://github.com/django/django/pull/19922",
+            "status": "open",
+            "date": null,
+            "lines_changed": ""
+          },
+          {
+            "pk": null,
+            "sort_order": 5,
+            "page": 3,
+            "project_name": "Django",
+            "title": "Clarify warning for UniqueConstraint(nulls_distinct)",
+            "description": "",
+            "pr_url": "https://github.com/Samriddha9619/django/pull/19884",
+            "status": "closed",
+            "date": null,
+            "lines_changed": ""
+          }
+        ],
+        "publications": [],
+        "form_fields": []
+      },
+      "approved_go_live_at": null
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 1,
+    "fields": {
+      "collection": 1,
+      "title": "20251005_224852",
+      "file": "original_images/20251005_224852.jpg",
+      "description": "",
+      "width": 4000,
+      "height": 2252,
+      "created_at": "2025-11-01T12:55:47.504Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 3356987,
+      "file_hash": "f50eb922b09e5f452655e5957a70a836301ef52a"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 2,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 011945",
+      "file": "original_images/Screenshot_2025-11-03_011945.png",
+      "description": "",
+      "width": 1718,
+      "height": 960,
+      "created_at": "2025-11-02T19:51:58.569Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 252580,
+      "file_hash": "8564601ed05a83ad9e9f94f4cbac6f77c2120ec0"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 3,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 013417",
+      "file": "original_images/Screenshot_2025-11-03_013417.png",
+      "description": "",
+      "width": 1912,
+      "height": 982,
+      "created_at": "2025-11-02T20:04:38.298Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 58124,
+      "file_hash": "847a8be3b26bff055e411222766dfead78117b8a"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 4,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 013552",
+      "file": "original_images/Screenshot_2025-11-03_013552.png",
+      "description": "",
+      "width": 1904,
+      "height": 969,
+      "created_at": "2025-11-02T20:06:23.778Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 2003259,
+      "file_hash": "7e1ec5d9f523d61cad57eab2e54cc187210eb197"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 5,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 013632",
+      "file": "original_images/Screenshot_2025-11-03_013632.png",
+      "description": "",
+      "width": 1919,
+      "height": 981,
+      "created_at": "2025-11-02T20:06:48.850Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 362925,
+      "file_hash": "8ad21508a89b6f78b53ed8e45ea8ad2327f6c2f2"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 6,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 020026",
+      "file": "original_images/Screenshot_2025-11-03_020026.png",
+      "description": "",
+      "width": 1919,
+      "height": 977,
+      "created_at": "2025-11-02T20:32:08.196Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 577464,
+      "file_hash": "672523013430f5308f5005525bd58ec1f8b220ac"
+    }
+  },
+  {
+    "model": "wagtailimages.image",
+    "pk": 7,
+    "fields": {
+      "collection": 1,
+      "title": "Screenshot 2025-11-03 022649",
+      "file": "original_images/Screenshot_2025-11-03_022649.png",
+      "description": "",
+      "width": 970,
+      "height": 672,
+      "created_at": "2025-11-02T20:57:05.696Z",
+      "uploaded_by_user": [
+        "sam"
+      ],
+      "focal_point_x": null,
+      "focal_point_y": null,
+      "focal_point_width": null,
+      "focal_point_height": null,
+      "file_size": 22266,
+      "file_hash": "bc12d3e2b15f58a8930d2b2e74ce5e2c1f5ab03b"
+    }
+  },
+  {
+    "model": "home.homepage",
+    "pk": 3,
+    "fields": {
+      "page_ptr": 3,
+      "to_address": "",
+      "from_address": "",
+      "subject": "",
+      "first_name": "Samriddha",
+      "last_name": "Tripathi",
+      "professional_title": "",
+      "profile_photo": 1,
+      "about": "<p data-block-key=\"jalil\">I'm a backend developer and open source enthusiast passionate about building scalable, reliable systems. I’ve contributed 5+ PRs to Django-related projects, with 2 successfully merged. My focus is on backend performance, latency, and system design — and I love turning complex ideas into practical tools.</p><p data-block-key=\"bsvjt\">Currently, I’m exploring distributed architectures and preparing to learn Go to expand my backend toolkit. My long-term goal is to become a backend architect who bridges theory and real-world implementation through open source and education.</p>",
+      "thank_you_text": "<p data-block-key=\"r6m04\">Thank you for your message!</p>",
+      "linkedin_url": "https://www.linkedin.com/in/samriddha9619",
+      "github_url": "https://github.com/Samriddha9619",
+      "twitter_url": "https://x.com/Samriddha_9619",
+      "email": "sumitkumartripathi0@gmail.com"
+    }
+  }
+]
