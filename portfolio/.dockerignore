@@ -1,9 +1,8 @@
 # Django project
-/media/
+# /media/  # Commented out - we need media files in production
 /static/
 *.sqlite3
 
-# Python and others
 __pycache__
 *.pyc
 .DS_Store
