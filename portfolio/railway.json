@@ -4,7 +4,7 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "pwd && ls -la && ls -la portfolio/ && ls -la portfolio/media/ || echo 'No portfolio/media' && python3 manage.py migrate --noinput && python3 manage.py loaddata portfolio_data_clean.json || true && python3 manage.py create_default_superuser && python3 manage.py collectstatic --noinput && gunicorn portfolio.wsgi:application --bind 0.0.0.0:$PORT",
+    "startCommand": "pwd && ls -la && ls -la media/ && ls -la media/images/ | head -5 || echo 'No media found' && python3 manage.py migrate --noinput && python3 manage.py loaddata portfolio_data_clean.json || true && python3 manage.py create_default_superuser && python3 manage.py collectstatic --noinput && gunicorn portfolio.wsgi:application --bind 0.0.0.0:$PORT",
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }

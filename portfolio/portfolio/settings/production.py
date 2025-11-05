@@ -51,8 +51,8 @@ else:
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
-# Media files - adjust path for Railway deployment
-MEDIA_ROOT = os.path.join(BASE_DIR, 'portfolio', 'media')
+# Media files
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
 # WhiteNoise
